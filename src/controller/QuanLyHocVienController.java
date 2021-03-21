@@ -271,8 +271,7 @@ public class QuanLyHocVienController {
                         MainJFrame frame = new MainJFrame();
                         JOptionPane.showMessageDialog(frame, "File saving to"+ file);
                         
-                        System.err.println("Print successes!");
-                       
+                                               
                     } catch (Exception ex) {
                         Logger.getLogger(QuanLyHocVienController.class.getName()).log(Level.SEVERE, null, ex);
                     } finally {

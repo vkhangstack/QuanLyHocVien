@@ -246,13 +246,7 @@ public class QuanLyKhoaHocController {
 
                             cell = row.createCell(3, CellType.STRING);
                             cell.setCellValue(khoaHoc.getNgay_bat_dau());
-                            System.err.println(khoaHoc.isTinh_trang());
-//                            if(hocVien.isGioi_tinh() == true){
-//                                cell.setCellValue("Nam");
-//                            } else {
-//                                cell.setCellValue("Nữ");
-//                            }
-                            
+                                               
                             cell = row.createCell(4, CellType.STRING);
                             cell.setCellValue(khoaHoc.getNgay_ket_thuc());
 

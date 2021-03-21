@@ -2,20 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/home/zebra/NetBeansProjects/QuanLyHocVien/src/dao/HocVienDAO.java</file>
-            <file>file:/home/zebra/NetBeansProjects/QuanLyHocVien/src/controller/KhoaHocController.java</file>
-            <file>file:/home/zebra/NetBeansProjects/QuanLyHocVien/src/controller/QuanLyHocVienController.java</file>
-            <file>file:/home/zebra/NetBeansProjects/QuanLyHocVien/src/view/KhoaHocJFrame.java</file>
-            <file>file:/home/zebra/NetBeansProjects/QuanLyHocVien/src/dao/KhoaHocDAOImpl.java</file>
-            <file>file:/home/zebra/NetBeansProjects/QuanLyHocVien/src/controller/QuanLyLopHocController.java</file>
-            <file>file:/home/zebra/NetBeansProjects/QuanLyHocVien/src/dao/KhoaHocDAO.java</file>
-            <file>file:/home/zebra/NetBeansProjects/QuanLyHocVien/src/view/KhoaHocJPanel.java</file>
-            <file>file:/home/zebra/NetBeansProjects/QuanLyHocVien/src/view/HocVienJPanel.java</file>
-            <file>file:/home/zebra/NetBeansProjects/QuanLyHocVien/src/controller/QuanLyKhoaHocController.java</file>
-            <file>file:/home/zebra/NetBeansProjects/QuanLyHocVien/src/service/HocVienServiceImpl.java</file>
-            <file>file:/home/zebra/NetBeansProjects/QuanLyHocVien/src/view/HocVienJFrame.java</file>
-            <file>file:/home/zebra/NetBeansProjects/QuanLyHocVien/src/controller/HocVienController.java</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>
