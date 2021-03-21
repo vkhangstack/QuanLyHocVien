@@ -4,16 +4,20 @@ import bean.DanhMucBean;
 import controller.ChuyenManHinhController;
 import java.util.ArrayList;
 import java.util.List;
+import javax.swing.ImageIcon;
 
 
 public class MainJFrame extends javax.swing.JFrame {
+
+    private static final long serialVersionUID = 1L;
 
     /** Creates new form MainJFrame */
     public MainJFrame() {
         initComponents();
         setTitle("Quản Lý Học Viên");
         setLocationRelativeTo(null);
-        
+        setResizable(true);
+       
         ChuyenManHinhController controller = new ChuyenManHinhController(jpnView);
         controller.setView(jpnTrangChu, jlbTrangChu);
         
@@ -50,6 +54,7 @@ public class MainJFrame extends javax.swing.JFrame {
         jlbLopHoc = new javax.swing.JLabel();
         jpnThongKe = new javax.swing.JPanel();
         jlbThongKe = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
         jpnView = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -62,7 +67,9 @@ public class MainJFrame extends javax.swing.JFrame {
         jpnLogo.setBackground(new java.awt.Color(165, 22, 226));
 
         jlbLogo.setFont(new java.awt.Font("Arial", 1, 22)); // NOI18N
+        jlbLogo.setForeground(new java.awt.Color(254, 254, 254));
         jlbLogo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jlbLogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/resume.png"))); // NOI18N
         jlbLogo.setText("Quản Lý Học Viên");
 
         javax.swing.GroupLayout jpnLogoLayout = new javax.swing.GroupLayout(jpnLogo);
@@ -82,7 +89,9 @@ public class MainJFrame extends javax.swing.JFrame {
         jpnTrangChu.setBackground(new java.awt.Color(96, 100, 191));
 
         jlbTrangChu.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        jlbTrangChu.setForeground(new java.awt.Color(254, 254, 254));
         jlbTrangChu.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jlbTrangChu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/home.png"))); // NOI18N
         jlbTrangChu.setText("Màn Hình Chính");
 
         javax.swing.GroupLayout jpnTrangChuLayout = new javax.swing.GroupLayout(jpnTrangChu);
@@ -105,8 +114,12 @@ public class MainJFrame extends javax.swing.JFrame {
         jpnHocVien.setBackground(new java.awt.Color(76, 175, 80));
 
         jlbHocVien.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        jlbHocVien.setForeground(new java.awt.Color(254, 254, 254));
         jlbHocVien.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jlbHocVien.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/graduated.png"))); // NOI18N
         jlbHocVien.setText("Quản Lý Học Viên");
+        jlbHocVien.setFocusable(false);
+        jlbHocVien.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
 
         javax.swing.GroupLayout jpnHocVienLayout = new javax.swing.GroupLayout(jpnHocVien);
         jpnHocVien.setLayout(jpnHocVienLayout);
@@ -128,8 +141,11 @@ public class MainJFrame extends javax.swing.JFrame {
         jpnKhoaHoc.setBackground(new java.awt.Color(76, 175, 80));
 
         jlbKhoaHoc.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        jlbKhoaHoc.setForeground(new java.awt.Color(254, 254, 254));
         jlbKhoaHoc.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jlbKhoaHoc.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/online-course.png"))); // NOI18N
         jlbKhoaHoc.setText("Quản Lý Khoá Học");
+        jlbKhoaHoc.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
 
         javax.swing.GroupLayout jpnKhoaHocLayout = new javax.swing.GroupLayout(jpnKhoaHoc);
         jpnKhoaHoc.setLayout(jpnKhoaHocLayout);
@@ -151,8 +167,11 @@ public class MainJFrame extends javax.swing.JFrame {
         jpnLopHoc.setBackground(new java.awt.Color(76, 175, 80));
 
         jlbLopHoc.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        jlbLopHoc.setForeground(new java.awt.Color(254, 254, 254));
         jlbLopHoc.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jlbLopHoc.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/training.png"))); // NOI18N
         jlbLopHoc.setText("Quản Lý Lớp Học");
+        jlbLopHoc.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
 
         javax.swing.GroupLayout jpnLopHocLayout = new javax.swing.GroupLayout(jpnLopHoc);
         jpnLopHoc.setLayout(jpnLopHocLayout);
@@ -174,8 +193,11 @@ public class MainJFrame extends javax.swing.JFrame {
         jpnThongKe.setBackground(new java.awt.Color(76, 175, 80));
 
         jlbThongKe.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        jlbThongKe.setForeground(new java.awt.Color(254, 254, 254));
         jlbThongKe.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jlbThongKe.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/analytics.png"))); // NOI18N
         jlbThongKe.setText("Thống Kê Dữ Liệu");
+        jlbThongKe.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
 
         javax.swing.GroupLayout jpnThongKeLayout = new javax.swing.GroupLayout(jpnThongKe);
         jpnThongKe.setLayout(jpnThongKeLayout);
@@ -194,6 +216,10 @@ public class MainJFrame extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        jLabel1.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(1, 1, 1));
+        jLabel1.setText("Coder by Pham Van Khang");
+
         javax.swing.GroupLayout jpnMenuLayout = new javax.swing.GroupLayout(jpnMenu);
         jpnMenu.setLayout(jpnMenuLayout);
         jpnMenuLayout.setHorizontalGroup(
@@ -208,6 +234,10 @@ public class MainJFrame extends javax.swing.JFrame {
                     .addComponent(jpnLopHoc, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jpnThongKe, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
+            .addGroup(jpnMenuLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel1)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jpnMenuLayout.setVerticalGroup(
             jpnMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -224,7 +254,9 @@ public class MainJFrame extends javax.swing.JFrame {
                 .addComponent(jpnLopHoc, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(15, 15, 15)
                 .addComponent(jpnThongKe, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 97, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 67, Short.MAX_VALUE)
+                .addComponent(jLabel1)
+                .addContainerGap())
         );
 
         jpnView.setBackground(new java.awt.Color(254, 254, 254));
@@ -301,6 +333,7 @@ public class MainJFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jlbHocVien;
     private javax.swing.JLabel jlbKhoaHoc;
     private javax.swing.JLabel jlbLogo;

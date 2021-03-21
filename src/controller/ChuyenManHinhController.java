@@ -15,6 +15,7 @@ import view.KhoaHocJPanel;
 import view.LopHocJPanel;
 import view.ThongKeJPanel;
 import view.TrangChuPanel;
+import view.UpdateJPanel;
 
 
 public class ChuyenManHinhController {
@@ -72,8 +73,12 @@ public class ChuyenManHinhController {
                  setChangeBackground(kind);
                  break;
              case "LopHoc":
-                 node = new LopHocJPanel();
+                 //node = new LopHocJPanel();
                  setChangeBackground(kind);
+                 //update
+                 node = new UpdateJPanel();
+                 setChangeBackground(kind);
+                 //
                  break;
              case "ThongKe":
                  node = new ThongKeJPanel();

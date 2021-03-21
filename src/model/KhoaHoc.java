@@ -62,6 +62,10 @@ public class KhoaHoc implements Serializable{
     public void setTinh_trang(boolean tinh_trang) {
         this.tinh_trang = tinh_trang;
     }
+
+    public KhoaHoc getMa_khoa_hoc(int aInt) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
     
 }

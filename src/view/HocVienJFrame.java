@@ -53,6 +53,7 @@ public class HocVienJFrame extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
+        btnSubmit.setBackground(new java.awt.Color(204, 0, 204));
         btnSubmit.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         btnSubmit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/save.png"))); // NOI18N
         btnSubmit.setText("Lưu");

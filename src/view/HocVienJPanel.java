@@ -18,9 +18,10 @@ public class HocVienJPanel extends javax.swing.JPanel {
      */
     public HocVienJPanel() {
         initComponents();
-        QuanLyHocVienController controller = new QuanLyHocVienController(jpnView, btnAdd, jtfSearch);
+        QuanLyHocVienController controller = new QuanLyHocVienController(jpnView, btnAdd, jtfSearch, btnPrint);
         controller.setDataToTable();
         controller.setEvent();
+        
 
     }
 
@@ -33,22 +34,34 @@ public class HocVienJPanel extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jSpinField1 = new com.toedter.components.JSpinField();
         jpnRoot = new javax.swing.JPanel();
         btnAdd = new javax.swing.JButton();
         jtfSearch = new javax.swing.JTextField();
         jpnView = new javax.swing.JPanel();
+        btnPrint = new javax.swing.JButton();
 
         setLayout(new java.awt.BorderLayout());
 
-        btnAdd.setBackground(new java.awt.Color(254, 254, 254));
+        btnAdd.setBackground(new java.awt.Color(204, 0, 204));
         btnAdd.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        btnAdd.setForeground(new java.awt.Color(1, 1, 1));
         btnAdd.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/add.png"))); // NOI18N
-        btnAdd.setText("Add");
+        btnAdd.setText("Thêm");
+        btnAdd.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnAdd.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
 
         jtfSearch.setMaximumSize(new java.awt.Dimension(150, 250));
 
+        jpnView.setDebugGraphicsOptions(javax.swing.DebugGraphics.NONE_OPTION);
         jpnView.setLayout(new java.awt.BorderLayout());
+
+        btnPrint.setBackground(new java.awt.Color(204, 0, 204));
+        btnPrint.setForeground(new java.awt.Color(1, 1, 1));
+        btnPrint.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/printer.png"))); // NOI18N
+        btnPrint.setText("Xuất báo cáo");
+        btnPrint.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnPrint.setHideActionText(true);
 
         javax.swing.GroupLayout jpnRootLayout = new javax.swing.GroupLayout(jpnRoot);
         jpnRoot.setLayout(jpnRootLayout);
@@ -62,7 +75,9 @@ public class HocVienJPanel extends javax.swing.JPanel {
                         .addContainerGap())
                     .addGroup(jpnRootLayout.createSequentialGroup()
                         .addComponent(jtfSearch, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 517, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 345, Short.MAX_VALUE)
+                        .addComponent(btnPrint, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(btnAdd, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(49, 49, 49))))
         );
@@ -72,9 +87,10 @@ public class HocVienJPanel extends javax.swing.JPanel {
                 .addGap(32, 32, 32)
                 .addGroup(jpnRootLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jtfSearch, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnAdd, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jpnView, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnAdd, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnPrint, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addComponent(jpnView, javax.swing.GroupLayout.PREFERRED_SIZE, 561, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
@@ -84,6 +100,8 @@ public class HocVienJPanel extends javax.swing.JPanel {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAdd;
+    private javax.swing.JButton btnPrint;
+    private com.toedter.components.JSpinField jSpinField1;
     private javax.swing.JPanel jpnRoot;
     private javax.swing.JPanel jpnView;
     private javax.swing.JTextField jtfSearch;

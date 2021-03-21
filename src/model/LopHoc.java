@@ -1,12 +1,10 @@
-
 package model;
 
 import java.io.Serializable;
 import java.util.Date;
 
+public class LopHoc implements Serializable {
 
-public class LopHoc implements Serializable{
-    
     private int ma_lop_hoc;
     private KhoaHoc khoaHoc;//kế thừa class KhoaHoc
     private HocVien hocVien;//kế thừa class HocVien
@@ -53,6 +51,5 @@ public class LopHoc implements Serializable{
     public void setTinh_trang(boolean tinh_trang) {
         this.tinh_trang = tinh_trang;
     }
-    
-    
+
 }

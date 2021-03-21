@@ -13,20 +13,19 @@ import javax.swing.JTextField;
 import model.HocVien;
 import service.HocVienService;
 import service.HocVienServiceImpl;
-import view.HocVienJFrame;
 
 public class HocVienController {
 
     private final JButton btnSubmit;
     private final JTextField jtfMaHocVien;
     private final JTextField jtfHoTen;
-    private JDateChooser jdcNgaySinh;
-    private JRadioButton jrdGioiTinhNam;
-    private JRadioButton JrdGioiTinhNu;
-    private JTextField jtfSoDienThoai;
-    private JTextArea jtaDiaChi;
-    private JCheckBox jcbTinhTrang;
-    private JLabel jlbMsg;
+    private final JDateChooser jdcNgaySinh;
+    private final JRadioButton jrdGioiTinhNam;
+    private final JRadioButton JrdGioiTinhNu;
+    private final JTextField jtfSoDienThoai;
+    private final JTextArea jtaDiaChi;
+    private final JCheckBox jcbTinhTrang;
+    private final JLabel jlbMsg;
     private HocVien hocVien = null;
     private HocVienService hocVienService = null;
 
@@ -86,19 +85,21 @@ public class HocVienController {
                         jtfMaHocVien.setText("#" + lastID);
                         jlbMsg.setText("Cập nhật dữ liệu thành công!");
                     }
-                    
+
                 }
-                          
+
             }
 
             @Override
             public void mouseExited(MouseEvent e) {
-                btnSubmit.setBackground(new Color(255, 255, 255));
+                btnSubmit.setBackground(new Color(204, 0, 204));
+                
             }
 
             @Override
             public void mouseEntered(MouseEvent e) {
                 btnSubmit.setBackground(new Color(0, 200, 83));
+                
             }
 
             @Override
